@@ -63,7 +63,7 @@ function RowPost(props) {
   
   return (
     <div className='row'>
-          <h2>{props.title}</h2>
+          <h2 style={{marginTop:"10px"}}>{props.title}</h2>
       <div className="posters">
         
         {movies.map((obj) => 

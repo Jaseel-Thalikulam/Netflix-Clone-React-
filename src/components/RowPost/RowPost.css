@@ -1,55 +1,52 @@
-.row{
-    margin-left: 20px;
-    color: #fff;
+.row {
+  margin-left: 20px;
+  color: #fff;
 }
 
-.posters{
-    display:flex;
-    padding:20px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-   
+.posters {
+  display: flex;
+  padding: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth; /* Add smooth scrolling behavior */
 }
 
-
-
-.posters::-webkit-scrollbar{
-display: none;
+.posters::-webkit-scrollbar {
+  display: none;
 }
 
 .posterImg {
-    max-height: 250px;
-    margin-right: 10px;
-    cursor: pointer;
-    transition: transform 0.5s;
-    position: relative; 
-    z-index: 1;
+  max-height: 250px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  position: relative;
+  z-index: 1;
 }
 
 .posterImg:hover {
-    transform: scale(1.1);
-    z-index: 2; 
+  transform: scale(1.1);
+  z-index: 2;
 }
 
 .posterImg:not(:hover) {
-    transform: scale(1);
+  transform: scale(1);
 }
 
-
-.smallposter:hover{
-    transform: scale(1.1);
-    z-index: 2; 
-    
+.smallposter:hover {
+  transform: scale(1.1);
+  z-index: 2;
 }
+
 .smallposter:not(:hover) {
-    transform: scale(1);
+  transform: scale(1);
 }
 
-.smallposter{
-    transition: transform 0.5s; 
-    max-height: 150px;
-    margin-right: 10px;
-    cursor: pointer;
-    position: relative; 
-    z-index: 1;
+.smallposter {
+  transition: transform 0.5s;
+  max-height: 150px;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
