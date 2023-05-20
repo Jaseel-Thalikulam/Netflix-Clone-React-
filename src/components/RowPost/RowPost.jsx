@@ -4,7 +4,7 @@ import axios from '../../axios'
 import { IMG_URL, API_KEY} from '../../constants/constants'
 import YouTube from 'react-youtube'
 import { HttpStatusCode } from 'axios'
-function RowPost(props) {
+function  RowPost(props) {
 
   const [movies, setMovies] = useState([])
   const [urlId,setUrlId]=useState('')
