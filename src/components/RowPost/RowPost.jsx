@@ -7,6 +7,9 @@ import { HttpStatusCode } from 'axios'
 function  RowPost(props) {
 
   const [movies, setMovies] = useState([])
+
+
+  
   const [urlId,setUrlId]=useState('')
 
   useEffect(() => {
@@ -68,7 +71,7 @@ function  RowPost(props) {
         
         {movies.map((obj) => 
                
-          <img onClick={()=>handletrailer(obj.id)} className={props.isSmall?'smallposter':'posterImg'} src={`${IMG_URL+obj.backdrop_path}`} alt="poster" />
+          <img key={obj.id} onClick={()=>handletrailer(obj.id)} className={props.isSmall?'smallposter':'posterImg'} src={`${IMG_URL+obj.backdrop_path}`} alt="poster"/>
            
         )}
 
